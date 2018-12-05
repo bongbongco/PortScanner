@@ -37,7 +37,7 @@ class ScanManager:
 
         hosts_cursor = open(str(self.scan_class_number) + "_" + "hosts.csv", 'a')
         for host in self.nm.all_hosts():
-            hosts_cursor.write(host)
+            hosts_cursor.write(host + '\n')
 
         hosts_cursor.close()
 
